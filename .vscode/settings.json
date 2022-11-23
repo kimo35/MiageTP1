@@ -15,7 +15,8 @@
         "CRUD REST spec": "http://localhost:${port}/crud/_spec"
       },
       "server": "default~iris"
-    }
+    },
+    "workbench.colorTheme": "InterSystems Default Dark"
     
     
   

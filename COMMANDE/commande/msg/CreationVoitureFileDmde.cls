@@ -1,4 +1,4 @@
-Class commande.msg.creerVoitureDmde Extends Ens.Request
+Class commande.msg.CreationVoitureFileDmde Extends Ens.Request
 {
 
 Property voiture As commande.webObjet.wsVoiture;
@@ -16,3 +16,4 @@ Storage Default
 }
 
 }
+

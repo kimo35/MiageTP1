@@ -55,7 +55,7 @@ Method ajouterVoitureCatalogue(pRequest As commande.msg.ajouterVoitureCatalogueD
 Method consulterVoitureCatalogue(pRequest As commande.msg.consulterVoitureCatalogueDmde, Output pResponse As commande.msg.consulterVoitureCatalogueRpse) As %Status
 {
 
-    set pResponse = ##class(commande.msg.consulterVoitureCatalogueRpse).%New()
+    set pResponse = ##class(commande.msg.cgetCatalogueRpseonsulterVoitureCatalogueRpse).%New()
     if (##class(commande.data.Catalogue).consulterParMarqueModeleExists(pRequest.marque, pRequest.modele, .idCatalogue)){
         set catalogue = ##class(commande.data.Catalogue).%OpenId(idCatalogue)
         do ##class(commande.Transform.CatalogueToWsCatalogue).Transform(catalogue,.wsCatalogue)
